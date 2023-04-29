@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  padding: 5px 20px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  justify-content: space-between;
+  box-shadow: 0px 0px 3px #ccc;
+}
+.header_left {
+  display: flex;
+  align-items: center;
+}
+.header_left img {
+  height: 40px;
+}
+.header_search {
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 0px 10px;
+  height: 40px;
+}
+.header_search input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  min-width: 200px;
+}
+.header_middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_option {
+  padding: 5px 40px;
+  cursor: pointer;
+}
+.header_option:hover {
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+.header_option:hover svg {
+  color: #2381fa;
+}
+.header_option svg {
+  color: gray;
+}
+.header_option_active {
+  position: relative;
+}
+.header_option_active svg {
+  color: #2381fa;
+}
+.header_option_active::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  background-color: #2381fa;
+}
+.header_right {
+  display: flex;
+  align-items: center;
+}
+.header_info {
+  display: flex;
+  align-items: center;
+}
+.header_info:hover {
+  background-color: whitesmoke;
+}
+.header_info h5 {
+  margin-right: 20px;
+}
+.header_info .MuiAvatar-root {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+.header_right .MuiButtonBase-root {
+  width: 40px;
+  height: 40px;
+  margin: 0px 5px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .header_search {
+    display: none;
+  }
+  .header_middle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .header_right .IconButton {
+    display: none;
+  }
+}

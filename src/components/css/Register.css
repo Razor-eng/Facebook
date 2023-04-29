@@ -1,0 +1,235 @@
+.register {
+  background-color: #e9ebee;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.register_logo {
+  height: 85px;
+  margin-top: 35px;
+}
+.register_container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dddfe2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  width: 436px;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.register_container > h3 {
+  font-weight: 400;
+  margin-top: 24px;
+  margin-bottom: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hr3 {
+  margin-top: 0 !important;
+  border-bottom: 1px solid #dadde1 !important;
+  margin-bottom: 20px;
+}
+.register_container > h1 {
+  margin-top: 15px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.row input {
+  height: 35px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 20px;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  line-height: 16px;
+  font-size: 17px;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 100%;
+}
+.register_container > p {
+  font-size: 15px;
+  color: #606770;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.register_container > form > center > input {
+  height: 35px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 20px;
+  border: 1px solid #dddfe2;
+  color: #1d2129;
+  line-height: 16px;
+  font-size: 17px;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 90%;
+  margin-left: 10px;
+}
+.register_container > form > center > input::-webkit-input-placeholder {
+  font-size: 17px;
+  color: rgba(128, 128, 128, 0.8);
+  padding-left: 0px;
+}
+.register_button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  font-weight: bold;
+  justify-content: center;
+  background-color: #00a400;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 55%;
+  height: 45px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.register_date2 {
+  margin-left: -70px;
+  margin-right: 10px !important;
+  height: 40px;
+  width: 130px;
+  outline: #ccd0d5;
+  border-radius: 5px;
+  margin-top: 20px;
+  float: left;
+}
+.register_date3 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  height: 40px;
+  width: 130px;
+  outline: #ccd0d5;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  float: left;
+}
+.register_date {
+  display: flex;
+  font-size: 12px;
+  color: #606770;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.dates {
+  display: flex;
+  font-size: 12px;
+  color: #606770;
+  font-weight: 400;
+  margin-left: 80px;
+  margin-top: -18px;
+}
+.register_gender {
+  display: flex;
+  font-size: 12px;
+  color: #606770;
+  font-weight: 300;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+.register_radiocontainer {
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.wrapper {
+  padding: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid rgba(128, 128, 128, 0.493);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.wrapper label {
+  margin-right: 55px;
+}
+.wrapper input {
+  margin-top: 5px;
+}
+.register_policy {
+  font-size: 12px;
+  color: #1c1e21;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.register_policy span {
+  color: #385898;
+}
+.register_login {
+  color: #1877f2;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.register_login:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .register_container {
+    width: 100%;
+    height: 100%;
+  }
+  .register_radiocontainer {
+    flex-direction: column;
+  }
+  .register_button {
+    font-size: 20px;
+  }
+  .register_login {
+    font-size: 13 px;
+  }
+  .dates {
+    flex-direction: column;
+  }
+  .register_date2 {
+    width: 100%;
+  }
+  .register_date3 {
+    width: 100%;
+    margin-left: -70px !important;
+  }
+  .register_container {
+    height: fit-content;
+  }
+  .register_container > form > center > input {
+    width: 85%;
+  }
+}

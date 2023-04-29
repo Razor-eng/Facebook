@@ -1,0 +1,28 @@
+.sidebar {
+  cursor: pointer;
+  margin-top: 20px;
+  flex: 0.33;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar_row {
+  display: flex;
+  padding: 2px 15px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sidebar_row p {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.sidebar_row:hover {
+  background-color: rgb(211 211 211/31%);
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
