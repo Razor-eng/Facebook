@@ -42,6 +42,8 @@
 }
 .story:hover h4 {
   color: black;
+  left: 0;
+  width: 100%;
   background-color: whitesmoke;
   border-radius: 5px;
   display: inline-block;
